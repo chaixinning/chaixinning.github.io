@@ -121,7 +121,7 @@
 <section class="hero is-small">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.png" alt="Teaser Image" style="width: 100%; height: auto;">
+      <img src="static/images/teaser1.png" alt="Teaser Image" style="width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
@@ -139,7 +139,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Although recent diffusion-based super-resolution methods have significantly improved image realism and detail generation by leveraging pre-trained Text-to-Image (T2I) priors, 
+            they struggle with arbitrary scale super-resolution due to the lack of effective SR scale control. 
+            Moreover, as the SR factor increases, it becomes challenging to maintain semantic fidelity using only low-level feature constraints. 
+            To overcome these limitations, we propose AnyScaleSR, which 
+            (1) introduces global and local scale control mechanisms to adapt the diffusion-based super-resolution process for varying SR scales, and 
+            (2) integrates a global semantic preservation mechanism to ensure high image fidelity. 
+            Specifically, we design a global scale control mechanism that injects SR scale information into each block of the diffusion denoising network, 
+            enabling the network to adaptively extract and process features based on the SR scale. 
+            Additionally, we introduce a local scale control mechanism that dynamically refines the spatial LR image condition features according to the SR scale. 
+            For semantic preservation, we incorporate high-level text descriptions and fine-grained semantic features to apply dual-level semantic preservation by the cross-attention mechanism. 
+            Experimental results demonstrate that AnyScaleSR enhances both fidelity and realism across different SR scales, as evidenced by improvements in LPIPS, FID, DISTS, and CLIPIQA, 
+            while significantly boosting SR performance at ultra-high scaling factors such as ×24.          
           </p>
         </div>
       </div>
