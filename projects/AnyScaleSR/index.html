@@ -181,9 +181,9 @@
       <h2 class="title is-3 has-text-centered ">Overview</h2>
         <img src="static/images/method.png" alt="Semantic Preservation and Scale Control" style="width: 100%; height: auto;">
          <p>
-          Our AnyScaleSR comprises two stages: LR condition generation and conditional enhancement： <br>
-          (1) Stage 1: The LR condition generation stage coarsely upsamples the image to the target high-resolution image; while extracting semantics from the low-resolution (LR) image. <br>
-          (2) Stage 2: We generate the high-resolution image conditioned on the coarsely upsampled image, the SR scale, and the extracted LR semantics.
+          Our AnyScaleSR comprises two stages: Low Resolution (LR) preparation and conditional enhancement： <br>
+          (1) Stage 1: The LR preparation stage coarsely upsamples the image to the target high-resolution image; while extracting semantics from the LR image. <br>
+          (2) Stage 2: We generate the high-resolution (HR) image conditioned on the coarsely upsampled image, the SR scale, and the extracted LR semantics.
           The diffusion architecture includes a main generation branch and a condition branch. We design global and local scale control
           mechanisms to apply SR scale conditions, and incorporate global semantic preservation mechanisms to improve semantic fidelity.
          <p>
