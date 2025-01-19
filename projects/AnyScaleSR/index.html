@@ -143,8 +143,8 @@
             Although recent diffusion-based super-resolution methods have significantly improved image realism and detail generation by leveraging pre-trained Text-to-Image (T2I) priors, 
             they struggle with arbitrary scale super-resolution due to the lack of effective SR scale control. 
             Moreover, as the SR factor increases, it becomes challenging to maintain semantic fidelity using only low-level feature constraints. 
-            To overcome these limitations, we propose AnyScaleSR, which <br>
-            (1) introduces global and local scale control mechanisms to adapt the diffusion-based super-resolution process for varying SR scales, and <br>
+            To overcome these limitations, we propose AnyScaleSR, which 
+            (1) introduces global and local scale control mechanisms to adapt the diffusion-based super-resolution process for varying SR scales, and
             (2) integrates a global semantic preservation mechanism to ensure high image fidelity. <br>
             Specifically, we design a global scale control mechanism that injects SR scale information into each block of the diffusion denoising network, 
             enabling the network to adaptively extract and process features based on the SR scale. 
@@ -182,7 +182,7 @@
         <img src="static/images/method.png" alt="Semantic Preservation and Scale Control" style="width: 100%; height: auto;">
          <p>
           Our AnyScaleSR comprises two stages: LR condition generation and conditional enhancement： <br>
-          (1) Stage 1: The LR condition generation stage coarsely upsamples the image to the target high-resolution image; while extracting semantics from the low-resolution (LR) image.
+          (1) Stage 1: The LR condition generation stage coarsely upsamples the image to the target high-resolution image; while extracting semantics from the low-resolution (LR) image. <br>
           (2) Stage 2: We generate the high-resolution image conditioned on the coarsely upsampled image, the SR scale, and the extracted LR semantics.
           The diffusion architecture includes a main generation branch and a condition branch. We design global and local scale control
           mechanisms to apply SR scale conditions, and incorporate global semantic preservation mechanisms to improve semantic fidelity.
